@@ -5254,11 +5254,17 @@ table {
   background-color: #f2f2f2;
 }
 /* line 14, ../styles/_governance.scss */
-.chairs td {
-  padding: 8px 0 5px 10px;
-   font-weight: 700;
+/* changes 700 to 300,(EP/32/rekha)*/
+.chairs p{
+	
+	margin: 0;
+	padding: 0;	
+}
+.chairs td {  
+  padding: 23px 0 20px 10px;  
+  font-weight: 300;
   width: 19%;
-  font-size: 1em;
+  font-size: 15px;
 }
 /* line 19, ../styles/_governance.scss */
 .chairs td a {
@@ -5270,10 +5276,9 @@ table {
 }
 
 /* line 28, ../styles/_governance.scss */
+  /* changes 700 to 300,(EP/32/rekha)*/  
 .downloads {
-  /* changes 700 to normal,(EP/32/rekha)*/
-  font-weight: 700;
-  font-weight: normal; 
+  font-weight: 300; 
   margin-bottom: 20px;
 }
 /* line 31, ../styles/_governance.scss */
@@ -8841,20 +8846,18 @@ input[type="text"] {
     color: #9c9c9c;
   }
 }
-
 @media print {
   /* line 2272, ../styles/styles.scss */
+  /* Issue (EP/13/rekha)*/
+  /*.isotope { */
   nav, .breadcrumb,
   .stock-info, .site-search,
   .btn.menu-button,
   .spotlight, .explore,
-  .sprite,  
-  /* Issue (EP/13/rekha) */
-  /*   .isotope {  */  
+  .sprite,
   .isotope,.addthis, .next, .prev, .hero-pagination {
     display: none !important;
   }
-  
 
   /* line 2276, ../styles/styles.scss */
   .wrapper {
